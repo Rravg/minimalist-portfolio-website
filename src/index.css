@@ -1,3 +1,29 @@
+/* Custom Properties */
+:root {
+  --primary-color-1: #5fb4a2;
+  --primary-color-2: #203a4c;
+  --primary-color-3: #33323d;
+
+  --secondary-color-1: #fafafa;
+  --secondary-color-2: #eaeaeb;
+  --secondary-color-3: #f43030;
+
+  --text-color-normal: var(--primary-color-3);
+  --text-color-hover: var(--primary-color-1);
+
+  --button-color-normal: var(--primary-color-2);
+  --button-color-hover: var(--primary-color-1);
+  --button-color-disable: #d2d8db;
+
+  --color-error: var(--secondary-color-3);
+
+  --main-bg-color: var(--secondary-color-1);
+  --secondary-bg-color: var(--primary-color-3);
+
+  --mobile-hor-padding: 32px;
+  --mobile-ver-padding: 32px;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -26,6 +52,7 @@ html:focus-within {
 html,
 body {
   height: 100%;
+  background-color: var(--main-bg-color);
 }
 
 /* Set core body defaults */
@@ -45,4 +72,77 @@ picture,
 svg {
   max-width: 100%;
   display: block;
+}
+
+/* Utilities */
+.h1 {
+  font-family: "Ibarra Real Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: -0.45px;
+
+  color: #33323d;
+}
+
+.h2 {
+  font-family: "Ibarra Real Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.36px;
+
+  color: #33323d;
+}
+
+.h3 {
+  font-family: "Ibarra Real Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: -0.29px;
+
+  color: #33323d;
+}
+
+.body-1 {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+
+  color: #33323d;
+}
+
+.body-2 {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+
+  color: #33323d;
+}
+
+.App {
+  margin: auto;
+  padding-top: var(--mobile-ver-padding);
+}
+
+.container {
+  padding-left: var(--mobile-hor-padding);
+  padding-right: var(--mobile-hor-padding);
+  min-width: 375px;
+}
+
+/* Table Size  */
+@media (min-width: 768px) {
+}
+
+/* Desktop Size  */
+@media (min-width: 1440px) {
 }
