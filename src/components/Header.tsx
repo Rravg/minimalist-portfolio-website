@@ -9,7 +9,7 @@ import styles from "./styles/Header.module.css";
 
 export default function Header(): JSX.Element {
   const [clicked, setClicked] = useState(false);
-  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
 
   const handleClick = () => {
     setClicked((current) => {

@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  background-color: antiquewhite;
+  cursor: pointer;
+  width: fit-content;
+  --normal-color: var(--p-button-color-normal);
+  --filter-icon: none;
+}
+
+.container:hover {
+  --normal-color: var(--p-button-color-hover);
+  --filter-icon: brightness(0) saturate(100%) invert(99%) sepia(2%)
+    saturate(629%) hue-rotate(177deg) brightness(113%) contrast(100%);
+}
+
+.button {
+  border: none;
+  background-color: var(--normal-color);
+
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: white;
+
+  height: 48px;
+  width: 152px;
+
+  cursor: inherit;
+}
+
+.icon {
+  background-color: var(--normal-color);
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  mix-blend-mode: normal;
+  filter: brightness(90%);
+}
+
+.image {
+  filter: var(--filter-icon);
+}

@@ -1,21 +1,40 @@
 import { useEffect } from "react";
+import { useMediaQuery } from "react-responsive";
+
+import heroMobile from "../../images/homepage/mobile/image-homepage-hero.jpg";
+import heroTablet from "../../images/homepage/tablet/image-homepage-hero.jpg";
+import heroDesktop from "../../images/homepage/desktop/image-homepage-hero.jpg";
+
+import styles from "./styles/Home.module.css";
+
+import PrimaryButton from "../../components/PrimaryButton";
 
 export default function Home(): JSX.Element {
   useEffect(() => {
     document.title = "Minimalist Portfolio | Home";
   }, []);
+
+  const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
+  const isTablet = useMediaQuery({
+    query: "(min-width: 768px) and (max-width: 1439px)",
+  });
+  const isDesktop = useMediaQuery({
+    query: "(min-width: 1440px)",
+  });
   return (
     <main>
       <section>
         <div className="container">
           <div>
-            <img src="" alt="" />
+            {isMobile && <img src={heroMobile} alt="" />}
+            {isTablet && <img src={heroTablet} alt="" />}
+            {isDesktop && <img src={heroDesktop} alt="" />}
           </div>
           <div>
-            <h1>
+            <h1 className={isDesktop ? "h1" : "h2"}>
               Hey, I’m Alex Spencer and I love building beautiful websites
             </h1>
-            <button>ABOUT ME</button>
+            <PrimaryButton text="about me" />
           </div>
         </div>
       </section>
