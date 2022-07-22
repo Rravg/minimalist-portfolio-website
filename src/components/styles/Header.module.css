@@ -1,8 +1,12 @@
+.header {
+  margin-bottom: 40px;
+}
+
 .headerContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  /* position: relative; */
 }
 
 .topnav {
@@ -17,6 +21,8 @@
   position: absolute;
   top: calc(100% + 24px);
   right: calc(0% + var(--mobile-hor-padding));
+
+  z-index: 1;
 }
 
 .item {
@@ -41,6 +47,10 @@
 
 /* Table Size  */
 @media (min-width: 768px) {
+  .header {
+    margin-bottom: 47px;
+  }
+
   .topnav {
     background-color: var(--main-bg-color);
     width: auto;
@@ -68,6 +78,10 @@
 
 /* Desktop Size  */
 @media (min-width: 1440px) {
+  .header {
+    margin-bottom: 54px;
+  }
+
   .topnav {
     background-color: var(--main-bg-color);
     width: auto;

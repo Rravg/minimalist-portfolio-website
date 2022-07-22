@@ -17,7 +17,7 @@ export default function Header(): JSX.Element {
     });
   };
   return (
-    <header>
+    <header className={styles.header}>
       <div className={`container ${styles.headerContainer}`}>
         <div style={{ cursor: "pointer" }}>
           <img src={logo} alt="logo" />

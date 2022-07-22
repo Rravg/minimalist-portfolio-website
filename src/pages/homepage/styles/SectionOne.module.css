@@ -1,0 +1,86 @@
+/**** SECTION 1 ****/
+.section {
+  margin-bottom: 96px;
+}
+
+.imageContainer {
+  margin-bottom: 24px;
+}
+
+.image {
+  content: url("../../../images/homepage/mobile/image-homepage-hero.jpg");
+}
+
+/* .boxContainer {
+  } */
+
+.text {
+  margin-bottom: 32px;
+}
+/* *************** */
+
+/* Tablet Size  */
+@media (min-width: 768px) {
+  /**** SECTION 1 ****/
+  .section1 {
+    margin-bottom: 96px;
+  }
+
+  .imageContainer {
+    margin-bottom: 0px;
+  }
+
+  .image {
+    content: url("../../../images/homepage/tablet/image-homepage-hero.jpg");
+  }
+
+  .boxContainer {
+    background-color: var(--main-bg-color);
+    position: absolute;
+    bottom: 0%;
+    left: var(--tablet-hor-padding);
+
+    width: 514px;
+    height: 278px;
+
+    padding: 56px 56px 0px 0px;
+  }
+
+  .text {
+    margin-bottom: 48px;
+  }
+  /* *************** */
+}
+
+/* Desktop Size  */
+@media (min-width: 1440px) {
+  /**** SECTION 1 ****/
+  .section1 {
+    margin-bottom: 150px;
+  }
+
+  .imageContainer {
+    margin-bottom: 0px;
+  }
+
+  .image {
+    content: url("../../../images/homepage/desktop/image-homepage-hero.jpg");
+  }
+
+  .boxContainer {
+    background-color: var(--main-bg-color);
+    position: absolute;
+    bottom: 0%;
+    left: var(--desktop-hor-padding);
+
+    width: 445px;
+    height: 357px;
+
+    padding: 56px 55px 0px 0px;
+  }
+
+  .text {
+    margin-bottom: 53px;
+  }
+  /* *************** */
+}

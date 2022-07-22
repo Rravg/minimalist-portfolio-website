@@ -149,9 +149,11 @@ svg {
   padding-right: var(--mobile-hor-padding);
   min-width: 375px;
   max-width: 375px;
+
+  position: relative;
 }
 
-/* Table Size  */
+/* Tablet Size  */
 @media (min-width: 768px) {
   .App {
     padding-top: var(--tablet-ver-padding);
