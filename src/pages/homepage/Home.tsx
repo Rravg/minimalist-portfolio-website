@@ -9,6 +9,7 @@ import { useMediaQuery } from "react-responsive";
 
 import SectionOne from "./SectionOne";
 import SectionTwo from "./SectionTwo";
+import SectionThree from "./SectionThree";
 
 export default function Home(): JSX.Element {
   useEffect(() => {
@@ -26,12 +27,7 @@ export default function Home(): JSX.Element {
     <main>
       <SectionOne />
       <SectionTwo />
-
-      <section>
-        <div className="container">
-          <h2>Interested in doing a project together?</h2>
-        </div>
-      </section>
+      <SectionThree />
     </main>
   );
 }

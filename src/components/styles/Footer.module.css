@@ -1,0 +1,130 @@
+.container {
+  background-color: var(--secondary-bg-color);
+  padding-top: 56px;
+  padding-bottom: 56px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imageContainer {
+  margin-bottom: 40px;
+}
+
+.image {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+    hue-rotate(152deg) brightness(100%) contrast(101%);
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.item {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: white;
+
+  text-decoration: none;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.item:hover {
+  color: var(--text-color-hover);
+}
+
+.iconContainer {
+  display: flex;
+}
+
+.icon {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+    hue-rotate(152deg) brightness(100%) contrast(101%);
+  cursor: pointer;
+}
+
+.icon:not(:last-child) {
+  margin-right: 15px;
+}
+
+.icon:hover {
+  filter: brightness(0) saturate(100%) invert(69%) sepia(41%) saturate(415%)
+    hue-rotate(117deg) brightness(88%) contrast(80%);
+}
+
+/* Tablet Size  */
+@media (min-width: 768px) {
+  .container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  .imageContainer {
+    margin-bottom: 0px;
+    margin-right: 48px;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+  }
+
+  .item:not(:last-child) {
+    margin-bottom: 0px;
+    margin-right: 42px;
+  }
+
+  .iconContainer {
+    display: flex;
+    margin-left: auto;
+  }
+}
+
+/* Desktop Size  */
+@media (min-width: 1440px) {
+  .container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  .imageContainer {
+    margin-bottom: 0px;
+    margin-right: 48px;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+  }
+
+  .item:not(:last-child) {
+    margin-bottom: 0px;
+    margin-right: 42px;
+  }
+
+  .iconContainer {
+    display: flex;
+    margin-left: auto;
+  }
+}

@@ -1,5 +1,9 @@
-.container {
+.section {
+  margin-bottom: 115px;
 }
+
+/* .container {
+} */
 
 .imageContainer {
   width: 100%;
@@ -21,6 +25,10 @@
 
 /* Tablet Size  */
 @media (min-width: 768px) {
+  .section {
+    margin-bottom: 96px;
+  }
+
   .container {
     display: flex;
   }
@@ -46,6 +54,10 @@
 
 /* Desktop Size  */
 @media (min-width: 1440px) {
+  .section {
+    margin-bottom: 150px;
+  }
+
   .container {
     display: flex;
   }

@@ -3,7 +3,7 @@ import styles from "./styles/SectionTwo.module.css";
 
 export default function SectionTwo(): JSX.Element {
   return (
-    <section>
+    <section className={styles.section}>
       <div className={`container ${styles.container}`}>
         <div className={styles.imageContainer}>
           <img src="" alt="Profile" className={styles.image} />
