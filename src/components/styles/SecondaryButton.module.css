@@ -4,6 +4,9 @@
 
   --color: var(--primary-color-3);
   --background-color: var(--secondary-color-1);
+
+  text-decoration: none;
+  display: block;
 }
 
 .container:hover {

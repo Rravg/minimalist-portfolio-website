@@ -1,0 +1,17 @@
+.main {
+  margin-top: 0px;
+}
+
+/* Tablet Size  */
+@media (min-width: 768px) {
+  .main {
+    margin-top: 94px;
+  }
+}
+
+/* Desktop Size  */
+@media (min-width: 1440px) {
+  .main {
+    margin-top: 94px;
+  }
+}

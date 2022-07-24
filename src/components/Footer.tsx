@@ -16,7 +16,7 @@ export default function Footer(): JSX.Element {
           <Link to="/" className={styles.item}>
             HOME
           </Link>
-          <Link to="/detail" className={styles.item}>
+          <Link to="/portfolio" className={styles.item}>
             PORTFOLIO
           </Link>
           <Link to="/contact" className={styles.item}>

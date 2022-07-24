@@ -18,7 +18,7 @@ export default function SectionOne(): JSX.Element {
           <h1 className={isDesktop ? `h1 ${styles.text}` : `h2 ${styles.text}`}>
             Hey, I’m Alex Spencer and I love building beautiful websites
           </h1>
-          <PrimaryButton text="about me" />
+          <PrimaryButton text="about me" href="#about-me" />
         </div>
       </div>
     </section>

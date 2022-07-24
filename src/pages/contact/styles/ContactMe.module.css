@@ -1,0 +1,128 @@
+.label {
+  display: block;
+  text-align: left;
+
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 30px;
+
+  mix-blend-mode: normal;
+  color: hsla(245, 10%, 22%, 0.8);
+}
+
+.input {
+  width: 100%;
+  mix-blend-mode: normal;
+  background-color: hsla(245, 10%, 22%, 0.1);
+
+  border: none;
+  outline: none;
+
+  padding: 9px 16px;
+
+  /* text */
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 30px;
+  color: var(--text-color-normal);
+}
+
+.input::placeholder {
+  color: hsla(245, 10%, 22%, 0.4);
+}
+
+input:active,
+input:focus,
+textarea:active,
+textarea:focus {
+  border: 1px solid #5fb4a2;
+}
+
+:global .required {
+  border: 1px solid var(--color-error);
+}
+
+.wrapper {
+  border-top: 1px solid hsla(245, 10%, 22%, 0.15);
+  padding-top: 32px;
+  padding-bottom: 80px;
+}
+
+.title {
+  margin-bottom: 24px;
+}
+
+.button {
+  display: block;
+
+  cursor: pointer;
+
+  padding: 17px 36px 17px 32px;
+
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  border: 1px solid var(--primary-color-3);
+
+  color: var(--primary-color-3);
+  background-color: var(--secondary-color-1);
+}
+
+.button:hover {
+  color: var(--secondary-color-1);
+  background-color: var(--primary-color-3);
+}
+
+.warning {
+  font-family: "Public Sans";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+
+  color: var(--color-error);
+
+  display: none;
+  text-align: start;
+
+  margin-top: 4px;
+}
+
+/* Tablet Size  */
+@media (min-width: 768px) {
+  .wrapper {
+    border-top: 1px solid hsla(245, 10%, 22%, 0.15);
+    padding-top: 32px;
+    padding-bottom: 96px;
+  }
+  .title {
+    margin-bottom: 32px;
+  }
+}
+
+/* Desktop Size  */
+@media (min-width: 1440px) {
+  .wrapper {
+    border-top: 1px solid hsla(245, 10%, 22%, 0.15);
+    padding-top: 48px;
+    padding-bottom: 109px;
+    display: flex;
+  }
+  .title {
+    margin-bottom: 0px;
+    width: 350px;
+  }
+
+  .form {
+    width: 635px;
+  }
+}

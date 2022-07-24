@@ -5,6 +5,8 @@
   width: fit-content;
   --normal-color: var(--p-button-color-normal);
   --filter-icon: none;
+
+  text-decoration: none;
 }
 
 .container:hover {

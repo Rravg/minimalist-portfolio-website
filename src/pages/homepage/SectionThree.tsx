@@ -10,7 +10,7 @@ export default function SectionThree(): JSX.Element {
         </h2>
         <div className={styles.line}></div>
         <div className={styles.button}>
-          <SecondaryButton text="contact me" />
+          <SecondaryButton text="contact me" href="/contact"/>
         </div>
       </div>
     </section>

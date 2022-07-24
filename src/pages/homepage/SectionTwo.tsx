@@ -3,7 +3,7 @@ import styles from "./styles/SectionTwo.module.css";
 
 export default function SectionTwo(): JSX.Element {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="about-me">
       <div className={`container ${styles.container}`}>
         <div className={styles.imageContainer}>
           <img src="" alt="Profile" className={styles.image} />
@@ -30,7 +30,7 @@ export default function SectionTwo(): JSX.Element {
             find me outdoors. I love being out in nature whether that’s going
             for a walk, run or cycling. I’d love you to check out my work.
           </p>
-          <SecondaryButton text="go to portfolio" />
+          <SecondaryButton text="go to portfolio" href="/portfolio" />
         </div>
       </div>
     </section>

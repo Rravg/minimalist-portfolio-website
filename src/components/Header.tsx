@@ -16,6 +16,10 @@ export default function Header(): JSX.Element {
       return !current;
     });
   };
+
+  const linkClick = () => {
+    setClicked(false);
+  };
   return (
     <header className={styles.header}>
       <div className={`container ${styles.headerContainer}`}>
@@ -24,13 +28,13 @@ export default function Header(): JSX.Element {
         </div>
         {(!isMobile || clicked) && (
           <nav id="topnav" className={styles.topnav}>
-            <Link to="/" className={styles.item}>
+            <Link to="/" className={styles.item} onClick={linkClick}>
               HOME
             </Link>
-            <Link to="/detail" className={styles.item}>
+            <Link to="/portfolio" className={styles.item} onClick={linkClick}>
               PORTFOLIO
             </Link>
-            <Link to="/contact" className={styles.item}>
+            <Link to="/contact" className={styles.item} onClick={linkClick}>
               CONTACT ME
             </Link>
           </nav>
