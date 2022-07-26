@@ -1,5 +1,5 @@
 /**** SECTION 1 ****/
-.section {
+.section1 {
   margin-bottom: 96px;
 }
 
@@ -8,7 +8,8 @@
 }
 
 .image {
-  content: url("../../../images/homepage/mobile/image-homepage-hero.jpg");
+  width: 100%;
+  height: 271px;
 }
 
 /* .boxContainer {
@@ -31,7 +32,8 @@
   }
 
   .image {
-    content: url("../../../images/homepage/tablet/image-homepage-hero.jpg");
+    width: 100%;
+    height: 600px;
   }
 
   .boxContainer {
@@ -64,7 +66,8 @@
   }
 
   .image {
-    content: url("../../../images/homepage/desktop/image-homepage-hero.jpg");
+    width: 100%;
+    height: 600px;
   }
 
   .boxContainer {
