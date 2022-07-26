@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/minimalist-portfolio-website/static/css/main.d9a65ef9.css",
+    "main.js": "/minimalist-portfolio-website/static/js/main.7b0bce34.js",
+    "static/js/787.d7a76bb1.chunk.js": "/minimalist-portfolio-website/static/js/787.d7a76bb1.chunk.js",
+    "static/media/image-insure-hero.jpg": "/minimalist-portfolio-website/static/media/image-insure-hero.03d1355c5fbaa20541dc.jpg",
+    "static/media/image-homepage-hero.jpg": "/minimalist-portfolio-website/static/media/image-homepage-hero.18443de6381e746fb91a.jpg",
+    "static/media/image-fylo-hero.jpg": "/minimalist-portfolio-website/static/media/image-fylo-hero.0213b2aa4a700d3ca866.jpg",
+    "static/media/image-manage-preview-2.jpg": "/minimalist-portfolio-website/static/media/image-manage-preview-2.8069a3641ea35451e016.jpg",
+    "static/media/image-manage-hero.jpg": "/minimalist-portfolio-website/static/media/image-manage-hero.a7441bda4b1670891853.jpg",
+    "static/media/image-insure-preview-2.jpg": "/minimalist-portfolio-website/static/media/image-insure-preview-2.e1f21dc602599b472f61.jpg",
+    "static/media/image-fylo-preview-2.jpg": "/minimalist-portfolio-website/static/media/image-fylo-preview-2.0d378f23e53b0425b141.jpg",
+    "static/media/image-homepage-profile.jpg": "/minimalist-portfolio-website/static/media/image-homepage-profile.27a4a72c8f4b22430e0c.jpg",
+    "static/media/image-bookmark-preview-2.jpg": "/minimalist-portfolio-website/static/media/image-bookmark-preview-2.9e8c76b61fb3a59e4e44.jpg",
+    "static/media/image-bookmark-hero.jpg": "/minimalist-portfolio-website/static/media/image-bookmark-hero.818b7024e5a2220127d3.jpg",
+    "static/media/image-insure-preview-1.jpg": "/minimalist-portfolio-website/static/media/image-insure-preview-1.82e16e8a59541d49e215.jpg",
+    "static/media/image-portfolio-insure.jpg": "/minimalist-portfolio-website/static/media/image-portfolio-insure.e9909ef98ac0e78adb31.jpg",
+    "static/media/image-manage-preview-1.jpg": "/minimalist-portfolio-website/static/media/image-manage-preview-1.6d3d594c8b284cfc00b9.jpg",
+    "static/media/image-portfolio-bookmark.jpg": "/minimalist-portfolio-website/static/media/image-portfolio-bookmark.3c94b55767b2c7cfba8d.jpg",
+    "static/media/image-portfolio-manage.jpg": "/minimalist-portfolio-website/static/media/image-portfolio-manage.62fc27eb486f5f979709.jpg",
+    "static/media/image-bookmark-preview-1.jpg": "/minimalist-portfolio-website/static/media/image-bookmark-preview-1.ce8b64c45469fb810773.jpg",
+    "static/media/image-portfolio-fylo.jpg": "/minimalist-portfolio-website/static/media/image-portfolio-fylo.0188e120088570c6c435.jpg",
+    "static/media/image-fylo-preview-1.jpg": "/minimalist-portfolio-website/static/media/image-fylo-preview-1.1e386b1eb600b757bc0b.jpg",
+    "index.html": "/minimalist-portfolio-website/index.html",
+    "static/media/github.svg": "/minimalist-portfolio-website/static/media/github.3880ceac2a12439cf8b79a89aeeed480.svg",
+    "static/media/twitter.svg": "/minimalist-portfolio-website/static/media/twitter.7df99bf5a1458bd6b8d8e5ae05766b88.svg",
+    "static/media/linkedin.svg": "/minimalist-portfolio-website/static/media/linkedin.74f016513d1804e5edc75b0be0c71bfd.svg",
+    "static/media/close.svg": "/minimalist-portfolio-website/static/media/close.6229efc8110c5463c2d09a4275fd6db7.svg",
+    "static/media/down-arrows.svg": "/minimalist-portfolio-website/static/media/down-arrows.2bd23bfb7742408a56d78e5cd37f9f3b.svg",
+    "static/media/logo.svg": "/minimalist-portfolio-website/static/media/logo.6b2775f27638e19c166d604dbba6f59d.svg",
+    "static/media/hamburger.svg": "/minimalist-portfolio-website/static/media/hamburger.15a29eb27a8d537770888ab3e0886c52.svg",
+    "static/media/arrow-left.svg": "/minimalist-portfolio-website/static/media/arrow-left.a89e4de1cc043b26dac31bbd843bb626.svg",
+    "static/media/arrow-right.svg": "/minimalist-portfolio-website/static/media/arrow-right.aec1b6f966bfbb1a22ccd01ed94a4c4c.svg",
+    "main.d9a65ef9.css.map": "/minimalist-portfolio-website/static/css/main.d9a65ef9.css.map",
+    "main.7b0bce34.js.map": "/minimalist-portfolio-website/static/js/main.7b0bce34.js.map",
+    "787.d7a76bb1.chunk.js.map": "/minimalist-portfolio-website/static/js/787.d7a76bb1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d9a65ef9.css",
+    "static/js/main.7b0bce34.js"
+  ]
+}
