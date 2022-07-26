@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./styles/SecondaryButton.module.css";
 
 interface SecondaryButtonProps {
@@ -5,13 +6,10 @@ interface SecondaryButtonProps {
   href: string;
 }
 
-export default function SecondaryButton({
-  text,
-  href,
-}: SecondaryButtonProps): JSX.Element {
+export default function SecondaryButton({ text, href }: SecondaryButtonProps): JSX.Element {
   return (
-    <a className={styles.container} href={href}>
+    <Link className={styles.container} to={href}>
       <button className={styles.button}>{text}</button>
-    </a>
+    </Link>
   );
 }

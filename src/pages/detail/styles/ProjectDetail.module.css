@@ -1,0 +1,178 @@
+.keywords {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 30px;
+
+  color: var(--primary-color-1);
+
+  text-align: start;
+}
+
+.sectionOne {
+  margin-bottom: 40px;
+}
+
+.sectionTwo {
+  padding-bottom: 64px;
+}
+
+.blockContainer {
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  border-top: 1px solid hsla(245, 10%, 22%, 0.15);
+  border-bottom: 1px solid hsla(245, 10%, 22%, 0.15);
+}
+
+.title {
+  margin-bottom: 24px;
+}
+
+.description {
+  margin-bottom: 24px;
+}
+
+.words {
+  composes: keywords;
+  margin-bottom: 24px;
+}
+
+.backgroundContainer {
+  padding-top: 48px;
+}
+
+.bTitle {
+  text-align: start;
+  margin-bottom: 28px;
+}
+
+.background {
+  text-align: start;
+  opacity: 0.8;
+
+  margin-bottom: 40px;
+}
+
+.staticTitle {
+  margin-bottom: 40px;
+  text-align: start;
+}
+
+/* Tablet Size  */
+@media (min-width: 768px) {
+  .sectionOne {
+    margin-bottom: 40px;
+  }
+
+  .sectionTwo {
+    padding-bottom: 80px;
+  }
+
+  .blockContainer {
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .title {
+    margin-bottom: 16px;
+  }
+
+  .description {
+    margin-bottom: 0px;
+    position: absolute;
+    right: 0%;
+    top: 32px;
+
+    width: 339px;
+  }
+
+  .words {
+    composes: keywords;
+    margin-bottom: 16px;
+  }
+
+  .backgroundContainer {
+    padding-top: 40px;
+  }
+
+  .bTitle {
+    text-align: start;
+    margin-bottom: 28px;
+  }
+
+  .background {
+    text-align: start;
+    opacity: 0.8;
+
+    margin-bottom: 40px;
+  }
+
+  .staticTitle {
+    margin-bottom: 40px;
+  }
+}
+
+/* Desktop Size  */
+@media (min-width: 1440px) {
+  .sectionOne {
+    margin-bottom: 115px;
+  }
+
+  .sectionTwo {
+    padding-bottom: 64px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .blockContainer {
+    position: initial;
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    width: 350px;
+    height: fit-content;
+  }
+
+  .title {
+    margin-bottom: 29px;
+  }
+
+  .description {
+    margin-bottom: 24px;
+    position: initial;
+  }
+
+  .words {
+    composes: keywords;
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }
+
+  .backgroundContainer {
+    padding-top: 0px;
+    width: 635px;
+  }
+
+  .bTitle {
+    text-align: start;
+    margin-bottom: 28px;
+  }
+
+  .background {
+    text-align: start;
+    opacity: 0.8;
+
+    margin-bottom: 40px;
+  }
+
+  .staticTitle {
+    margin-bottom: 28px;
+  }
+}

@@ -9,6 +9,7 @@ import SectionThree from "./SectionThree";
 export default function Home(): JSX.Element {
   useEffect(() => {
     document.title = "Minimalist Portfolio | Home";
+    window.scrollTo(0, 0);
   }, []);
 
   return (

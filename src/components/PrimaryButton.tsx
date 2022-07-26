@@ -6,10 +6,7 @@ interface PrimaryButtonProps {
   href: string;
 }
 
-export default function PrimaryButton({
-  text,
-  href,
-}: PrimaryButtonProps): JSX.Element {
+export default function PrimaryButton({ text, href }: PrimaryButtonProps): JSX.Element {
   const handleClick = () => {
     console.log("i clicked the container!");
   };

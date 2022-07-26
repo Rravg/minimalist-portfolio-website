@@ -6,6 +6,7 @@ interface ProjectProps {
   title: string;
   description: string;
   screenshots: string[];
+  param: string;
 }
 
 const Project = {
@@ -13,6 +14,7 @@ const Project = {
     title,
     description,
     screenshots,
+    param,
   }: ProjectProps): JSX.Element {
     const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
     const isTablet = useMediaQuery({
@@ -24,36 +26,19 @@ const Project = {
 
     const renderImage = () => {
       if (isMobile) {
-        return (
-          <img
-            src={screenshots[0]}
-            alt="Project Screenshot"
-            className={styles.image}
-          />
-        );
+        return <img src={screenshots[0]} alt="Project Screenshot" className={styles.image} />;
       } else if (isTablet) {
-        return (
-          <img
-            src={screenshots[1]}
-            alt="Project Screenshot"
-            className={styles.image}
-          />
-        );
+        return <img src={screenshots[1]} alt="Project Screenshot" className={styles.image} />;
       } else if (isDesktop) {
-        return (
-          <img
-            src={screenshots[2]}
-            alt="Project Screenshot"
-            className={styles.image}
-          />
-        );
+        return <img src={screenshots[2]} alt="Project Screenshot" className={styles.image} />;
       }
     };
+    const image = renderImage();
 
     return (
       <section className={styles.section}>
         <div className={`container ${styles.container}`}>
-          <div className={styles.imageContainer}>{renderImage()}</div>
+          <div className={styles.imageContainer}>{image}</div>
           <div className={styles.boxContainer}>
             <h2 className="h2" style={{ marginBottom: "24px" }}>
               {title}
@@ -68,7 +53,7 @@ const Project = {
             >
               {description}
             </p>
-            <SecondaryButton text="view project" href="/portfolio" />
+            <SecondaryButton text="view project" href={`/detail/${param}`} />
           </div>
         </div>
       </section>
@@ -79,6 +64,7 @@ const Project = {
     title,
     description,
     screenshots,
+    param,
   }: ProjectProps): JSX.Element {
     const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
     const isTablet = useMediaQuery({
@@ -90,29 +76,11 @@ const Project = {
 
     const renderImage = () => {
       if (isMobile) {
-        return (
-          <img
-            src={screenshots[0]}
-            alt="Project Screenshot"
-            className={styles.image}
-          />
-        );
+        return <img src={screenshots[0]} alt="Project Screenshot" className={styles.image} />;
       } else if (isTablet) {
-        return (
-          <img
-            src={screenshots[1]}
-            alt="Project Screenshot"
-            className={styles.image}
-          />
-        );
+        return <img src={screenshots[1]} alt="Project Screenshot" className={styles.image} />;
       } else if (isDesktop) {
-        return (
-          <img
-            src={screenshots[2]}
-            alt="Project Screenshot"
-            className={styles.image}
-          />
-        );
+        return <img src={screenshots[2]} alt="Project Screenshot" className={styles.image} />;
       }
     };
 
@@ -134,7 +102,7 @@ const Project = {
             >
               {description}
             </p>
-            <SecondaryButton text="view project" href="/portfolio" />
+            <SecondaryButton text="view project" href={`/detail/${param}`} />
           </div>
         </div>
       </section>

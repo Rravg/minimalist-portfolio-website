@@ -22,6 +22,7 @@ import fyloDesktop from "../../images/portfolio/desktop/image-portfolio-fylo.jpg
 export default function Portfolio(): JSX.Element {
   useEffect(() => {
     document.title = "Minimalist Portfolio | My Projects";
+    window.scrollTo(0, 0);
   }, []);
   return (
     <main className={styles.main}>
@@ -33,6 +34,7 @@ export default function Portfolio(): JSX.Element {
       such as the testimonial slider.
       "
         screenshots={[manageMobil, manageTablet, manageDesktop]}
+        param="manage"
       />
       <Project.Left
         title="Bookmark"
@@ -41,6 +43,7 @@ export default function Portfolio(): JSX.Element {
         I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity,
         such as the features section."
         screenshots={[bookmarkMobil, bookmarkTablet, bookmarkDesktop]}
+        param="bookmark"
       />
       <Project.Right
         title="Insure"
@@ -49,6 +52,7 @@ export default function Portfolio(): JSX.Element {
         The only JavaScript this project required was to enable the toggling of the mobile navigation.
       "
         screenshots={[insureMobil, insureTablet, insureDesktop]}
+        param="insure"
       />
       <Project.Left
         title="Fylo"
@@ -56,6 +60,7 @@ export default function Portfolio(): JSX.Element {
         This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and built it so that it was fully-responsive.
          I took a mobile-first approach and used modern CSS like Flexbox and Grid for layout purposes."
         screenshots={[fyloMobil, fyloTablet, fyloDesktop]}
+        param="fylo"
       />
       <SectionThree />
     </main>
