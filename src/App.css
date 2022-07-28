@@ -1,3 +1,18 @@
+/* Mobile Size  */
 .App {
-  text-align: center;
+  padding-top: 32px;
+}
+
+/* Tablet Size  */
+@media (min-width: 768px) {
+  .App {
+    padding-top: 64px;
+  }
+}
+
+/* Desktop Size  */
+@media (min-width: 1440px) {
+  .App {
+    padding-top: 64px;
+  }
 }

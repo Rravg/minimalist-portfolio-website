@@ -31,17 +31,17 @@
     align-items: center;
   }
 
-  .line {
-    display: block;
-    height: 1px;
-    width: 113px;
-    background-color: hsla(245, 10%, 22%, 0.15);
-  }
-
   .text {
     text-align: left;
     margin-bottom: 0px;
-    width: 350px;
+    max-width: 50.872%;
+  }
+
+  .line {
+    display: block;
+    height: 1px;
+    width: 16.4244%;
+    background-color: hsla(245, 10%, 22%, 0.15);
   }
 
   .button {
@@ -62,17 +62,17 @@
     align-items: center;
   }
 
-  .line {
-    display: block;
-    height: 1px;
-    width: 534px;
-    background-color: hsla(245, 10%, 22%, 0.15);
-  }
-
   .text {
     text-align: left;
     margin-bottom: 0px;
-    width: 350px;
+    max-width: 31.5315%;
+  }
+
+  .line {
+    display: block;
+    height: 1px;
+    width: 48.1081%;
+    background-color: hsla(245, 10%, 22%, 0.15);
   }
 
   .button {

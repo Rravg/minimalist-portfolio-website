@@ -45,11 +45,13 @@
   }
 
   .imageContainer {
-    width: 339px;
+    max-width: 339px;
     margin-bottom: 0px;
 
     padding-top: 51px;
     padding-bottom: 51px;
+
+    margin-right: 69px;
   }
 
   .boxContainer {
@@ -59,15 +61,17 @@
     border-top: 1px solid hsla(245, 10%, 22%, 0.15);
     border-bottom: 1px solid hsla(245, 10%, 22%, 0.15);
 
-    width: 281px;
+    width: 41%;
   }
 
   .imageContainerInverted {
     composes: imageContainer;
+    margin-right: 0px;
   }
 
   .boxContainerInverted {
     composes: boxContainer;
+    margin-left: 69px;
   }
 
   .text {
@@ -97,7 +101,7 @@
   }
 
   .imageContainer {
-    width: 540px;
+    max-width: 540px;
     margin-bottom: 0px;
     margin-right: 125px;
 
@@ -112,23 +116,7 @@
     border-top: 1px solid hsla(245, 10%, 22%, 0.15);
     border-bottom: 1px solid hsla(245, 10%, 22%, 0.15);
 
-    width: 350px;
-  }
-
-  .imageContainer {
-    width: 540px;
-    margin-bottom: 0px;
-    margin-right: 125px;
-  }
-
-  .boxContainer {
-    padding-top: 103px;
-    padding-bottom: 103px;
-
-    border-top: 1px solid hsla(245, 10%, 22%, 0.15);
-    border-bottom: 1px solid hsla(245, 10%, 22%, 0.15);
-
-    width: 350px;
+    width: 31.5315%;
   }
 
   .imageContainerInverted {

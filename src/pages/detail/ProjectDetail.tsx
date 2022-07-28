@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { useMediaQuery } from "react-responsive";
 import SecondaryButton from "../../components/SecondaryButton";
 import Navigation from "./Navigation";
 import styles from "./styles/ProjectDetail.module.css";
@@ -33,56 +32,15 @@ export default function ProjectDetail({
     window.scrollTo(0, 0);
   }, []);
 
-  const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
-  const isTablet = useMediaQuery({
-    query: "(min-width: 768px) and (max-width: 1439px)",
-  });
-  const isDesktop = useMediaQuery({
-    query: "(min-width: 1440px)",
-  });
-
-  const renderHero = () => {
-    if (isMobile) {
-      return <img src={heroImages[0]} alt="hero" />;
-    } else if (isTablet) {
-      return <img src={heroImages[1]} alt="hero" />;
-    } else if (isDesktop) {
-      return <img src={heroImages[2]} alt="hero" />;
-    }
-  };
-  const hero = renderHero();
-
-  const renderPreviews = () => {
-    if (isMobile) {
-      return (
-        <>
-          <img src={preview1[0]} alt="hero" style={{ marginBottom: "40px" }} />
-          <img src={preview2[0]} alt="hero" />
-        </>
-      );
-    } else if (isTablet) {
-      return (
-        <>
-          <img src={preview1[1]} alt="hero" style={{ marginBottom: "40px" }} />
-          <img src={preview2[1]} alt="hero" />
-        </>
-      );
-    } else if (isDesktop) {
-      return (
-        <>
-          <img src={preview1[2]} alt="hero" style={{ marginBottom: "40px" }} />
-          <img src={preview2[2]} alt="hero" />
-        </>
-      );
-    }
-  };
-  const previews = renderPreviews();
-
   return (
     <>
       <section className={styles.sectionOne}>
         <div className="container">
-          <div>{hero}</div>
+          <picture>
+            <source srcSet={heroImages[2]} media="(min-width: 1440px)" />
+            <source srcSet={heroImages[1]} media="(min-width: 768px)" />
+            <img src={heroImages[0]} alt="hero screenshot" width="100%" />
+          </picture>
         </div>
       </section>
 
@@ -125,7 +83,22 @@ export default function ProjectDetail({
             <h3 className={`h3 ${styles.bTitle}`}>Project Background</h3>
             <p className={`body-2 ${styles.background}`}>{background}</p>
             <h3 className={`h3 ${styles.staticTitle}`}>Static Previews</h3>
-            <div>{previews}</div>
+            {/* <div>{previews}</div> */}
+            <picture>
+              <source srcSet={preview1[2]} media="(min-width: 1440px)" />
+              <source srcSet={preview1[1]} media="(min-width: 768px)" />
+              <img
+                src={preview1[0]}
+                alt="hero screenshot"
+                width="100%"
+                style={{ marginBottom: "40px" }}
+              />
+            </picture>
+            <picture>
+              <source srcSet={preview2[2]} media="(min-width: 1440px)" />
+              <source srcSet={preview2[1]} media="(min-width: 768px)" />
+              <img src={preview2[0]} alt="hero screenshot" width="100%" />
+            </picture>
           </div>
         </div>
       </section>

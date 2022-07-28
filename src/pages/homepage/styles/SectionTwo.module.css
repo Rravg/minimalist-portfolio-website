@@ -6,21 +6,15 @@
 } */
 
 .imageContainer {
-  width: 100%;
   margin-bottom: 32px;
 }
 
 .boxContainer {
-  width: 100%;
   padding-top: 32px;
   padding-bottom: 51px;
 
   border-top: 1px solid hsla(245, 10%, 22%, 0.15);
   border-bottom: 1px solid hsla(245, 10%, 22%, 0.15);
-}
-
-.image {
-  content: url("../../../images/homepage/mobile/image-homepage-profile.jpg");
 }
 
 /* Tablet Size  */
@@ -31,24 +25,22 @@
 
   .container {
     display: flex;
+    gap: 69px;
   }
 
   .imageContainer {
-    width: 50%;
     margin-bottom: 0px;
+    max-width: 281px;
   }
 
   .boxContainer {
-    width: 339px;
     padding-top: 50px;
     padding-bottom: 47px;
 
     border-top: 1px solid hsla(245, 10%, 22%, 0.15);
     border-bottom: 1px solid hsla(245, 10%, 22%, 0.15);
-  }
 
-  .image {
-    content: url("../../../images/homepage/tablet/image-homepage-profile.jpg");
+    flex: 1;
   }
 }
 
@@ -60,24 +52,21 @@
 
   .container {
     display: flex;
+    gap: 125px;
   }
 
   .imageContainer {
-    width: 50%;
     margin-bottom: 0px;
-    margin-right: 125px;
+    max-width: 540px;
   }
 
   .boxContainer {
-    width: 350px;
     padding-top: 50px;
     padding-bottom: 47px;
 
     border-top: 1px solid hsla(245, 10%, 22%, 0.15);
     border-bottom: 1px solid hsla(245, 10%, 22%, 0.15);
-  }
 
-  .image {
-    content: url("../../../images/homepage/desktop/image-homepage-profile.jpg");
+    max-width: 31.5315%;
   }
 }

@@ -13,8 +13,8 @@
 }
 
 .image {
-  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
-    hue-rotate(152deg) brightness(100%) contrast(101%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(152deg)
+    brightness(100%) contrast(101%);
 }
 
 .nav {
@@ -50,19 +50,24 @@
   display: flex;
 }
 
-.icon {
-  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
-    hue-rotate(152deg) brightness(100%) contrast(101%);
+.iconButton {
   cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 
-.icon:not(:last-child) {
+.iconButton:not(:last-child) {
   margin-right: 15px;
 }
 
+.icon {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(152deg)
+    brightness(100%) contrast(101%);
+}
+
 .icon:hover {
-  filter: brightness(0) saturate(100%) invert(69%) sepia(41%) saturate(415%)
-    hue-rotate(117deg) brightness(88%) contrast(80%);
+  filter: brightness(0) saturate(100%) invert(69%) sepia(41%) saturate(415%) hue-rotate(117deg)
+    brightness(88%) contrast(80%);
 }
 
 /* Tablet Size  */

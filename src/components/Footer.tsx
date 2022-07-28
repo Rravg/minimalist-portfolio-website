@@ -24,9 +24,17 @@ export default function Footer(): JSX.Element {
           </Link>
         </nav>
         <div className={styles.iconContainer}>
-          <img src={github} alt="github" className={styles.icon} />
-          <img src={twitter} alt="twitter" className={styles.icon} />
-          <img src={linkedin} alt="linkedin" className={styles.icon} />
+          <a href="/#" className={styles.iconButton} aria-label="github">
+            <img src={github} alt="github" className={styles.icon} />
+          </a>
+
+          <a href="/#" className={styles.iconButton} aria-label="twitter">
+            <img src={twitter} alt="twitter" className={styles.icon} />
+          </a>
+
+          <a href="/#" className={styles.iconButton} aria-label="linkedin">
+            <img src={linkedin} alt="linkedin" className={styles.icon} />
+          </a>
         </div>
       </div>
     </footer>

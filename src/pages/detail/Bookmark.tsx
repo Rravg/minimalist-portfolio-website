@@ -1,16 +1,16 @@
 import ProjectDetail from "./ProjectDetail";
 
-import heroMobile from "../../images/detail/mobile/image-bookmark-hero.jpg";
-import heroTablet from "../../images/detail/tablet/image-bookmark-hero.jpg";
-import heroDesktop from "../../images/detail/desktop/image-bookmark-hero.jpg";
+import heroMobile from "../../images/detail/mobile/image-bookmark-hero@2x.jpg";
+import heroTablet from "../../images/detail/tablet/image-bookmark-hero@2x.jpg";
+import heroDesktop from "../../images/detail/desktop/image-bookmark-hero@2x.jpg";
 
-import previewMobile1 from "../../images/detail/mobile/image-bookmark-preview-1.jpg";
-import previewTablet1 from "../../images/detail/tablet/image-bookmark-preview-1.jpg";
-import previewDesktop1 from "../../images/detail/desktop/image-bookmark-preview-1.jpg";
+import previewMobile1 from "../../images/detail/mobile/image-bookmark-preview-1@2x.jpg";
+import previewTablet1 from "../../images/detail/tablet/image-bookmark-preview-1@2x.jpg";
+import previewDesktop1 from "../../images/detail/desktop/image-bookmark-preview-1@2x.jpg";
 
-import previewMobile2 from "../../images/detail/mobile/image-bookmark-preview-2.jpg";
-import previewTablet2 from "../../images/detail/tablet/image-bookmark-preview-2.jpg";
-import previewDesktop2 from "../../images/detail/desktop/image-bookmark-preview-2.jpg";
+import previewMobile2 from "../../images/detail/mobile/image-bookmark-preview-2@2x.jpg";
+import previewTablet2 from "../../images/detail/tablet/image-bookmark-preview-2@2x.jpg";
+import previewDesktop2 from "../../images/detail/desktop/image-bookmark-preview-2@2x.jpg";
 
 export default function Bookmark(): JSX.Element {
   return (

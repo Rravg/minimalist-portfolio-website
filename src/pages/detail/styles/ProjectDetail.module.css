@@ -87,7 +87,7 @@
     right: 0%;
     top: 32px;
 
-    width: 339px;
+    width: calc(50% - 6px);
   }
 
   .words {
@@ -136,7 +136,7 @@
     padding-top: 48px;
     padding-bottom: 48px;
 
-    width: 350px;
+    width: 31.5315%;
     height: fit-content;
   }
 
@@ -147,6 +147,7 @@
   .description {
     margin-bottom: 24px;
     position: initial;
+    width: 100%;
   }
 
   .words {
@@ -157,7 +158,7 @@
 
   .backgroundContainer {
     padding-top: 0px;
-    width: 635px;
+    width: 57.2072%;
   }
 
   .bTitle {

@@ -3,21 +3,21 @@ import { useEffect } from "react";
 import SectionThree from "../homepage/SectionThree";
 import Project from "./Project";
 
-import manageMobil from "../../images/portfolio/mobile/image-portfolio-manage.jpg";
-import manageTablet from "../../images/portfolio/tablet/image-portfolio-manage.jpg";
-import manageDesktop from "../../images/portfolio/desktop/image-portfolio-manage.jpg";
+import manageMobil from "../../images/portfolio/mobile/image-portfolio-manage@2x.jpg";
+import manageTablet from "../../images/portfolio/tablet/image-portfolio-manage@2x.jpg";
+import manageDesktop from "../../images/portfolio/desktop/image-portfolio-manage@2x.jpg";
 
-import bookmarkMobil from "../../images/portfolio/mobile/image-portfolio-bookmark.jpg";
-import bookmarkTablet from "../../images/portfolio/tablet/image-portfolio-bookmark.jpg";
-import bookmarkDesktop from "../../images/portfolio/desktop/image-portfolio-bookmark.jpg";
+import bookmarkMobil from "../../images/portfolio/mobile/image-portfolio-bookmark@2x.jpg";
+import bookmarkTablet from "../../images/portfolio/tablet/image-portfolio-bookmark@2x.jpg";
+import bookmarkDesktop from "../../images/portfolio/desktop/image-portfolio-bookmark@2x.jpg";
 
-import insureMobil from "../../images/portfolio/mobile/image-portfolio-insure.jpg";
-import insureTablet from "../../images/portfolio/tablet/image-portfolio-insure.jpg";
-import insureDesktop from "../../images/portfolio/desktop/image-portfolio-insure.jpg";
+import insureMobil from "../../images/portfolio/mobile/image-portfolio-insure@2x.jpg";
+import insureTablet from "../../images/portfolio/tablet/image-portfolio-insure@2x.jpg";
+import insureDesktop from "../../images/portfolio/desktop/image-portfolio-insure@2x.jpg";
 
-import fyloMobil from "../../images/portfolio/mobile/image-portfolio-fylo.jpg";
-import fyloTablet from "../../images/portfolio/tablet/image-portfolio-fylo.jpg";
-import fyloDesktop from "../../images/portfolio/desktop/image-portfolio-fylo.jpg";
+import fyloMobil from "../../images/portfolio/mobile/image-portfolio-fylo@2x.jpg";
+import fyloTablet from "../../images/portfolio/tablet/image-portfolio-fylo@2x.jpg";
+import fyloDesktop from "../../images/portfolio/desktop/image-portfolio-fylo@2x.jpg";
 
 export default function Portfolio(): JSX.Element {
   useEffect(() => {

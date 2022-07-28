@@ -20,14 +20,9 @@
   --main-bg-color: var(--secondary-color-1);
   --secondary-bg-color: var(--primary-color-3);
 
-  --mobile-hor-padding: 32px;
-  --mobile-ver-padding: 32px;
-
-  --tablet-hor-padding: 39px;
-  --tablet-ver-padding: 64px;
-
-  --desktop-hor-padding: 165px;
-  --desktop-ver-padding: 64px;
+  --mobile-hor-padding: 8.533333%;
+  --tablet-hor-padding: 5.078125%;
+  --desktop-hor-padding: 11.388889%;
 }
 
 /* Box sizing rules */
@@ -138,47 +133,27 @@ svg {
 }
 
 /* Mobile Size  */
-
-.App {
-  padding-top: var(--mobile-ver-padding);
-}
-
 .container {
-  margin: auto;
+  margin: 0px;
+  width: 100%;
   padding-left: var(--mobile-hor-padding);
   padding-right: var(--mobile-hor-padding);
-  min-width: 375px;
-  max-width: 375px;
 
   position: relative;
 }
 
 /* Tablet Size  */
 @media (min-width: 768px) {
-  .App {
-    padding-top: var(--tablet-ver-padding);
-  }
-
   .container {
-    margin: auto;
     padding-left: var(--tablet-hor-padding);
     padding-right: var(--tablet-hor-padding);
-    min-width: auto;
-    max-width: 768px;
   }
 }
 
 /* Desktop Size  */
 @media (min-width: 1440px) {
-  .App {
-    padding-top: var(--desktop-ver-padding);
-  }
-
   .container {
-    margin: auto;
     padding-left: var(--desktop-hor-padding);
     padding-right: var(--desktop-hor-padding);
-    min-width: auto;
-    max-width: 1440px;
   }
 }

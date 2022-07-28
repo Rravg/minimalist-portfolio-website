@@ -29,9 +29,17 @@ export default function GetInTouch(): JSX.Element {
               below and get in touch using the form.
             </p>
             <div className={styles.iconContainer}>
-              <img src={github} alt="github" className={styles.icon} />
-              <img src={twitter} alt="twitter" className={styles.icon} />
-              <img src={linkedin} alt="linkedin" className={styles.icon} />
+              <a href="/#" className={styles.iconLink}>
+                <img src={github} alt="github" className={styles.icon} aria-label="github" />
+              </a>
+
+              <a href="/#" className={styles.iconLink} aria-label="twitter">
+                <img src={twitter} alt="twitter" className={styles.icon} />
+              </a>
+
+              <a href="/#" className={styles.iconLink} aria-label="linkedin">
+                <img src={linkedin} alt="linkedin" className={styles.icon} />
+              </a>
             </div>
           </div>
         </div>

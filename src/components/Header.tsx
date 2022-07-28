@@ -1,11 +1,11 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import { useMediaQuery } from "react-responsive";
-
+import styles from "./styles/Header.module.css";
 import logo from "../images/logo.svg";
 import hamburger from "../images/icons/hamburger.svg";
 import close from "../images/icons/close.svg";
-import styles from "./styles/Header.module.css";
+
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { useMediaQuery } from "react-responsive";
 
 export default function Header(): JSX.Element {
   const [clicked, setClicked] = useState(false);
@@ -24,10 +24,10 @@ export default function Header(): JSX.Element {
     <header className={styles.header}>
       <div className={`container ${styles.headerContainer}`}>
         <div style={{ cursor: "pointer" }}>
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="" />
         </div>
         {(!isMobile || clicked) && (
-          <nav id="topnav" className={styles.topnav}>
+          <nav id="topnav" className={styles.nav}>
             <Link to="/" className={styles.item} onClick={linkClick}>
               HOME
             </Link>
@@ -40,9 +40,14 @@ export default function Header(): JSX.Element {
           </nav>
         )}
         {isMobile && (
-          <div style={{ cursor: "pointer" }} onClick={handleClick}>
-            <img src={clicked ? close : hamburger} alt="" />
-          </div>
+          <button
+            onClick={handleClick}
+            aria-label="Menu"
+            aria-expanded={clicked ? "true" : "false"}
+            className={styles.menu}
+          >
+            <img src={clicked ? close : hamburger} alt="hamburger" />
+          </button>
         )}
       </div>
     </header>

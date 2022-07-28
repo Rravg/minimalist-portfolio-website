@@ -1,3 +1,4 @@
+/* Mobile Size  */
 .header {
   margin-bottom: 40px;
 }
@@ -6,13 +7,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* position: relative; */
 }
 
-.topnav {
+.nav {
   background-color: var(--secondary-bg-color);
-  width: 223px;
-  height: 186px;
+  width: 75%;
+  max-width: 223px;
+  max-height: 186px;
   padding: 40px 0px;
 
   display: flex;
@@ -45,16 +46,23 @@
   color: var(--text-color-hover);
 }
 
+.menu {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
 /* Table Size  */
 @media (min-width: 768px) {
   .header {
     margin-bottom: 47px;
   }
 
-  .topnav {
+  .nav {
     background-color: var(--main-bg-color);
     width: auto;
-    height: auto;
+    max-width: none;
+    max-height: none;
     padding: 0px;
 
     display: block;
@@ -82,10 +90,11 @@
     margin-bottom: 54px;
   }
 
-  .topnav {
+  .nav {
     background-color: var(--main-bg-color);
     width: auto;
-    height: auto;
+    max-width: none;
+    max-height: none;
     padding: 0px;
 
     display: block;

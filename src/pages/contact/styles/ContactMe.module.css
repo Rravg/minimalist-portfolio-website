@@ -116,13 +116,15 @@ textarea:focus {
     padding-top: 48px;
     padding-bottom: 109px;
     display: flex;
+
+    justify-content: space-between;
   }
   .title {
     margin-bottom: 0px;
-    width: 350px;
+    width: 31.5315%;
   }
 
   .form {
-    width: 635px;
+    width: 57.2072%;
   }
 }

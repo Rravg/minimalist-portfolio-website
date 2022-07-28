@@ -19,17 +19,23 @@
   display: flex;
 }
 
+.iconLink {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.iconLink:not(:last-child) {
+  margin-right: 15px;
+}
+
 .icon {
   cursor: pointer;
 }
 
 .icon:hover {
-  filter: brightness(0) saturate(100%) invert(69%) sepia(41%) saturate(415%)
-    hue-rotate(117deg) brightness(88%) contrast(80%);
-}
-
-.icon:not(:last-child) {
-  margin-right: 15px;
+  filter: brightness(0) saturate(100%) invert(69%) sepia(41%) saturate(415%) hue-rotate(117deg)
+    brightness(88%) contrast(80%);
 }
 
 /* Tablet Size  */
@@ -55,7 +61,7 @@
   .section {
     margin-top: 94px;
   }
-  
+
   .wrapper {
     padding-top: 48px;
     padding-bottom: 48px;
@@ -63,16 +69,17 @@
     border-top: 1px solid hsla(245, 10%, 22%, 0.15);
 
     display: flex;
+    justify-content: space-between;
   }
 
   .title {
     text-align: start;
     margin-bottom: 24px;
-    width: 350px;
+    width: 31.5315%;
   }
 
   .bodyContainer {
-    width: 635px;
+    width: 57.2072%;
   }
 
   .break {
