@@ -10,9 +10,9 @@ export default function SectionTwo(): JSX.Element {
     <section className={styles.section} id="about-me">
       <div className={`container ${styles.container}`}>
         <picture className={styles.imageContainer}>
-          <source srcSet={desktopProfile} media="(min-width: 1440px)" height="600"/>
-          <source srcSet={tabletProfile} media="(min-width: 768px)" height="600"/>
-          <img src={mobileProfile} alt="profile" className={styles.image} />
+          <source srcSet={desktopProfile} media="(min-width: 1440px)" />
+          <source srcSet={tabletProfile} media="(min-width: 768px)" />
+          <img src={mobileProfile} alt="profile" className={styles.image} width="100%" />
         </picture>
         <div className={styles.boxContainer}>
           <h2 className="h2" style={{ marginBottom: "28px" }}>

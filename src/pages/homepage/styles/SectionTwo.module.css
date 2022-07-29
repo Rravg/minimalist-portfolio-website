@@ -30,7 +30,8 @@
 
   .imageContainer {
     margin-bottom: 0px;
-    max-width: 281px;
+    max-width: none;
+    width: 40.8430%;
   }
 
   .boxContainer {
@@ -57,7 +58,8 @@
 
   .imageContainer {
     margin-bottom: 0px;
-    max-width: 540px;
+    max-width: none;
+    width: 48.6486%;
   }
 
   .boxContainer {
